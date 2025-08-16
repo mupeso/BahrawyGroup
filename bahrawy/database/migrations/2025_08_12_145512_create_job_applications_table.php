@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('email');
             $table->string('subject')->nullable();
             $table->text('comment')->nullable();
-            $table->string('cv_file')->nullable();
+            $table->string('path')->nullable();
 
             $table->timestamps();
         });
