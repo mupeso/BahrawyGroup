@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->string('location')->nullable();
-            $table->enum('status', ['open', 'closed'])->default('open');
+            $table->string('status')->nullable();
             $table->timestamps();
         });
     }
